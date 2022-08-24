@@ -2,7 +2,8 @@
 html, body{
     font-family: 'Montserrat', sans-serif;
     background: #42855B;
-    color: #D2D79F;   
+    color: #D2D79F;
+    scroll-behavior: smooth;
 }
 a{text-decoration: none;}
 /*navbar*/
@@ -28,4 +29,40 @@ height: 100px;
 }
 #navbar ul li a:hover {
 background: #483838;
+}
+/*Home*/
+#home {
+    text-align: center;
+    display: inline;
+}
+#home img{
+    height: 400px;
+    padding: 25px;
+    background: #90B77D;
+}
+
+/*quienes somos*/
+#foto1{
+    text-align: center;
+    background: #90B77D;
+}
+/*sobre el evento*/
+#sobre-el-evento img{
+    text-align: center;
+    background: #90B77D;
+}
+/*registro*/
+
+/*pronostico del tiempo/*
+
+/*contacto*/
+#contacto img{
+    height: 150px;
+}
+#top h1{
+    color: #D2D79F;
+    text-align: center;
+}
+#top a h1:hover{
+    background: #483838;
 }
