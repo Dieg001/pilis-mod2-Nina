@@ -77,15 +77,55 @@
         <!--registro-->
         <section id="registro">
            <h2>Registro</h2>
+
+           <div class="container">
+             <div class="form-registro">
+                
+                 <form id="formulario">
+                    <div class="form-group">
+                        <label for="solicitante">Pyme Solicitante</label>
+                        <input id="solicitante" class="form-control" type="text">
+                    </div>
+                    <div class="form-group">
+                        <label for="cuit">Cuit de Empresa</label>
+                        <input id="cuit" class="form-control" type="number">
+                      </div>
+                      <div class="form-group">
+                        <label for="email">Email de Contacto</label>
+                        <input id="email" class="form-control" type="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="telefono">Numero de contacto</label>
+                        <input id="telefono" class="form-control" type="tel">
+                        <button id="enviar" class="btn btn-light">Enviar</button>
+                      </div>
+                 </form>
+                
+             </div>
+
+           </div>
            
 
         </section>
 
         <!--pronostico del tiempo-->
-        <section id="pronostico del tiempo">
+        <section id="pronostico-del-tiempo">
          <h2>Pronóstico del Tiempo</h2>
          <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-
+          <div id="clima" class="container">
+           <h3>Cidudad Cultural, San Salvador de jujuy, Argentina</h3>
+           <div class="detalles">
+           <ul>
+             <div id="icon"><img src="img/nublado.png" alt=""></div>
+             <div id="paisaje"><img src="img/montaña.png" alt="" id="montaña"></div>
+             <li id="actual">Temperatura actual</li>
+             <li id="humedad" >humedad</li>
+             <li id="clima2">clima</li>
+            
+           </ul>
+           </div>
+           <h3>Powered by Openweather</h3>
+          </div>
         </section>
     </main>
     <footer>
@@ -99,7 +139,7 @@
        <a href="#mainheader"><h1>Arriba</h1></a>
        </section>
     </footer>
-     
+     <script src="main.js"></script>
 </body>
 
 </html>
