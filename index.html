@@ -5,24 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>mod2</title>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
 </head>
 
 <body>
     <header id="mainheader">
         <nav id="navbar">
-            <ul>
+            <div class="container">
+              <ul>
                 <li><a href="#nosotros">Quiénes Somos</a></li>
-                <li>Sobre el Evento</li>
-                <li>Registro</li>
+                <li><a href="#evento">Sobre el Evento</a></li>
+                <li><a href="#registro">Registro</a></li>
                 <li><a href="#tiempo">Pronóstico del Tiempo</a></li>
-                <li>Contacto</li>
-            </ul>
-        </nav>
+                <li><a href="#contacto">Contactanos</a></li>
+              </ul>
 
-        <a href="#home"><img src="img/logo_planta.jpg" alt="Logotipo del evento"></a>
+             <a href="#home"><img src="img/logo_planta.jpg" alt="Logotipo del evento"></a>
+            </div>
+        </nav>
     </header>
     <main>
+        <!--Home-->
         <section id="home">
 
             <article>
@@ -32,53 +36,113 @@
 
             <article>
                 <img src="img/imagen_plantas.jpg" alt="Plantas">
+                <img src="img/imagen_plantas.jpg" alt="">
+                <img src="img/imagen_plantas.jpg" alt="">
             </article>
 
         </section>
         <!-- Quienes Somos -->
         <section id="nosotros">
-
-            <article>
-                <img src="img/imagen_feria.jpg" alt="Feria de las Plantas">
-            </article>
-
             <article>
                 <h2>Quienes Somos</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea voluptatem omnis iusto placeat, voluptate in autem inventore sunt doloribus incidunt fugiat quo ipsa temporibus, explicabo recusandae dolor. Officiis, beatae voluptatibus.</p>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat eius laboriosam repellendus dolorem harum nisi vitae, asperiores quia quod iste. Nihil ipsam neque ex vitae deserunt in repellat tenetur suscipit.</p>
             </article>
 
-        </section>
-        <section>
+            <article id="foto1">
+                <img src="img/imagen_feria.jpg" alt="Feria de las Plantas">
+            </article>
 
-            <h1>Sobre el Evento</h1>
+           
+        </section>
+        <!-- Sobre El Evento-->
+        <section id="evento">
+            <h2>Sobre el Evento</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto et vero ullam.</p> 
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam aliquid magni veritatis dignissimos porro repellendus rem quos? Impedit pariatur sunt fuga veritatis voluptatem!</p>
+            <article id="foto1"><img src="img/cardon.jpg" alt="cardon"></article>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus saepe repellat totam voluptates! Placeat ea ad reiciendis debitis? Temporibus odit fuga, tempora eveniet quia doloremque ducimus error?</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, molestiae id? Error quisquam perspiciatis totam eligendi, nihil incidunt. Reiciendis quo qui expedita repellendus pariatur, dolorum tenetur nemo sunt. Recusandae, consequuntur molestiae qui quis commodi a non asperiores ipsam voluptatem voluptatum ab mollitia possimus voluptates vero!</p>
+            <h3>Cronograma</h3>
+            <ul>
+                <li><h1>Dia 1</h1></li>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam, earum! Consequuntur, aspernatur.</p>
+                <li><h1>Dia 2</h1></li>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus omnis est illo rem.</p>
+                <li><h1>Dia 3</h1></li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione rerum voluptates possimus corporis esse!</p>
+            </ul>
+        </section>
+        <!-- Registro -->
+        <section id="registro">
+            <h2>Registro</h2>
+
+            <div class="container">
+                <div class="form-registro">
+
+                    <form id="formulario">
+                        <div class="form-group">
+                            <label for="solicitante">Pyme Solicitante</label>
+                            <input id="solicitante" class="form-control" type="text">
+                        </div>
+                        <div class="form-group">
+                            <label for="cuit">Cuit de Empresa</label>
+                            <input id="cuit" class="form-control" type="number">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email de Contacto</label>
+                            <input id="email" class="form-control" type="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Numero de contacto</label>
+                            <input id="telefono" class="form-control" type="tel">
+                            <button id="enviar" class="btn btn-light">Enviar</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
 
         </section>
+
+        <!--Pronostico del Tiempo-->
         <section id="tiempo">
-
-            <h2>Pronostico del Tiempo</h2>
-            <p>Así está el clima en el lugar del evento!</p>
-
-            <article class="app-clima">
+            <h2>Pronóstico del Tiempo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <div class="app-container">
                 <div class="app-header">
                     <h3 id="app-title"></h3>
                 </div>
-                <div class="app-main">
+                <div class="app-weather">
                     <div id="app-icon"></div>
-                    <div id="app-temp"></div>
-                    <div id="app-hum"></div>
-                    <div id="app-desc"></div>
                 </div>
-                <div class="app-aside"></div>
-                <div class="app-footer"></div>
-            </article>
-
+                <div class="app-info">
+                    <ul>
+                        <li id="app-temp"></li>
+                        <li id="app-hum" ></li>
+                        <li id="app-desc"></li>
+                    </ul>
+                </div>
+                <div class="app-landscape">
+                    <!-- <div id="app-background"><img src="img/montaña.png" alt="" id="montaña"></div> -->
+                </div>
+                <div class="app-footer">
+                    <h3><a href="https://openweathermap.org/api" target="_blank" rel="noopener noreferrer">Powered by Openweather API</a></h3>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
-
+        <!-- Contacto -->
+        <section id="contacto">
+            <h2>Contactanos!</h2>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <a href="http://www.whatsapp.com/?lang=es"><img src="img/WhatsApp.jpg" alt="Logotipo de Whatsapp"></a>
+        </section>
+        <section id="top">
+            <a href="#mainheader"><h1>Arriba</h1></a>
+        </section>
     </footer>
-
 </body>
 
 </html>
