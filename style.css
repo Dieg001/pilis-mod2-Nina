@@ -45,12 +45,12 @@ background: #4b0100;
     background: #c9d05e;
 }
 
-/*quienes somos*/
+/* Quienes Somos*/
 #foto1{
     text-align: center;
     background: #c9d05e;
 }
-/*sobre el evento*/
+/* Sobre el Evento*/
 
 #sobre-el-evento img{
     text-align: center;
@@ -88,32 +88,87 @@ form .form-control{
     margin-top: 12px;
 }
 
-/*pronostico del tiempo*/
-#clima{
-    width: 30rem;
+/* Pronostico del Tiempo (Usando Grid)*/
+#tiempo{
+    width: 50rem;
     text-align: center;
-    border: 2px solid #4b0100;
-    padding: 40px;
+    padding: 20px;
 }
-#clima ul{
+
+.app-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.4fr 0.2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.app-header{
+    background-color: #FFBF34;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #000;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.app-main{
+    background-color: #F28500;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.app-weather{
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    background-color: grey;
+    margin: 10px;
+}
+
+#app-icon{
+    /* Centrar Vertical y Horizontalmente */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+}
+
+.app-info{
+    grid-area: 1 / 2 / 2 / 3;
+    font-style: oblique;
+}
+
+.app-info ul{
     list-style: none;
 }
-#clima ul li{
+
+.app-info ul li{
     padding: 18px;
     justify-items: center;
 }
-#pronostico-del-tiempo img{
-    height: 100px;
-}
-#icon{
-    float: left;
-    
-}
-#paisaje{
-    float: right;
+
+.app-landscape{
+    grid-area: 1 / 3 / 2 / 4;
+    margin: 10px;
+    background-image: url(/img/landscape/14074819238_6c00f7f002_o.jpg);
 }
 
-/*contacto*/
+.app-footer{
+    background-color: #E66A35;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.app-footer h3 a{
+    color: #000;
+}
+
+/* Contacto*/
 #contacto img{
     height: 150px;
 }
