@@ -15,6 +15,7 @@ font-weight: bold;
 #navbar img {
 float: left;
 height: 100px;
+border-radius: 50%;
 
 }
 #navbar ul{
@@ -46,12 +47,17 @@ background: #4b0100;
 }
 
 /*quienes somos*/
+#nosotros{
+    padding: 25px;
+}
 #foto1{
     text-align: center;
     background: #c9d05e;
 }
 /*sobre el evento*/
-
+#sobre-el-evento{
+    padding: 25px;
+}
 #sobre-el-evento img{
     text-align: center;
     background: #c9d05e;
@@ -88,6 +94,9 @@ form .form-control{
     margin-top: 12px;
 }
 /*pronostico del tiempo*/
+#pronostico-del-tiempo{
+    padding: 25px;
+}
 #clima{
     width: 30rem;
     text-align: center;
@@ -99,10 +108,11 @@ form .form-control{
 }
 #clima ul li{
     padding: 18px;
-    justify-items: center;
+    
 }
 #pronostico-del-tiempo img{
     height: 100px;
+    width: 100px;
 }
 #icon{
     float: left;
@@ -113,6 +123,9 @@ form .form-control{
 }
 
 /*contacto*/
+#contacto{
+    padding: 25px;
+}
 #contacto img{
     height: 150px;
 }

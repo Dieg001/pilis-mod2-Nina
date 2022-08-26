@@ -22,8 +22,8 @@ fetch("https://jsonplaceholder.typicode.com/posts", {
     .then((json) => { 
         console.log(json);
         Swal.fire(
-            'Enviado',
-            'Gracias por tu comentario',
+            'Solicitud Enviada',
+            'Gracias por su participacion',
             'success'
         );
         cleanForm();})
