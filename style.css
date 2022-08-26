@@ -39,22 +39,29 @@ background: #4b0100;
     text-align: center;
     display: inline;
 }
+
 #home img{
     height: 400px;
-    padding: 25px;
+    padding: 15px;
     background: #c9d05e;
 }
 
 /* Quienes Somos*/
+#nosotros article{
+    padding: 10px;
+    background-color: #c9d05e;
+    color: #2d5904;
+}
+
 #foto1{
     text-align: center;
     background: #c9d05e;
 }
-/* Sobre el Evento*/
 
-#sobre-el-evento img{
+/* Sobre el Evento*/
+#evento{
+    padding: 10px;
     text-align: center;
-    background: #c9d05e;
 }
 /*registro*/
 #registro{
@@ -63,8 +70,8 @@ background: #4b0100;
 }
 .form-registro{
    padding: 30px;
-    
 }
+
 form .form-group {
     margin-bottom: 0.8rem;
 }
@@ -90,13 +97,16 @@ form .form-control{
 
 /* Pronostico del Tiempo (Usando Grid)*/
 #tiempo{
-    width: 50rem;
+    margin: 10px;
+    background-color: #c9d05e;
+    color: #2d5904;
     text-align: center;
     padding: 20px;
 }
 
 .app-container{
-    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 0.3fr 0.4fr 0.2fr;
@@ -125,7 +135,8 @@ form .form-control{
 .app-weather{
     grid-area: 1 / 1 / 2 / 2;
     position: relative;
-    background-color: grey;
+    background-color: white;
+    border-radius: 10px;
     margin: 10px;
 }
 
@@ -147,12 +158,14 @@ form .form-control{
 }
 
 .app-info ul li{
+    color: #000;
     padding: 18px;
     justify-items: center;
 }
 
 .app-landscape{
     grid-area: 1 / 3 / 2 / 4;
+    border-radius: 10px;
     margin: 10px;
     background-image: url(/img/landscape/14074819238_6c00f7f002_o.jpg);
 }
