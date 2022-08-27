@@ -11,9 +11,9 @@ fetch(url)
         const ciudad = data.name;
         const pais = data.sys.country;
         const clima = data.weather[0].description;
+        const icono = `https://openweathermap.org/img/wn/${data.weather[0]["icon"]}@2x.png`;
         let temperatura = parseInt(data.main.temp);
         let humedad = data.main.humidity;
-        // let icono = data.weather[0].icon;
 
         // Modificar texto de clima
         const descripcion_string = clima.toString(); // Transformar Array de data.weather[] en String
@@ -36,18 +36,21 @@ fetch(url)
         */
 
         // Ver Datos en HTML.
+        // Introducir logotipos de climas.
+        let iconApp = document.createElement('img');
+        iconApp.src = icono;
+        document.getElementById("app-icon").appendChild(iconApp); // Icono
+
         // Reconocer Elementos HTML.
         let titleApp = document.getElementById("app-title"); // Título (Ciudad + País)
-        let iconApp = document.getElementById("app-icon"); // Icono
         let tempApp = document.getElementById("app-temp"); // Temperatura
         let humApp = document.getElementById("app-hum"); // % de Humedad
         let descApp = document.getElementById("app-desc"); // Descripción
 
         // Introducir los datos en los elementos.
-        titleApp.textContent = ciudad + ", " + pais;
+        titleApp.textContent = "Ciudad Cultural, " + ciudad + ", " + pais;
         tempApp.textContent = "Temperatura: " + parseInt(temperatura) + "º C";
         humApp.textContent = "Humedad: " + humedad + "%";
-
         descApp.textContent = "Clima: " + descripcion_unidos;
     })
     .catch(err => console.log('Solicitud Fallida', err))
@@ -60,3 +63,38 @@ async function getName(){
     return console.log(weatherData.name);
 }
 */
+
+function onClick (event) {
+    event.preventDefault();
+    this.style.backgroundColor = "black";
+    console.log("click...");
+    console.log(event);
+}
+  
+const mensaje = {
+    solicitante: document.getElementById('solicitante').value,
+    cuit: document.getElementById('cuit').value,
+    email: document.getElementById('email').value,
+    telefono: document.getElementById('telefono').value
+}
+console.log(mensaje);
+
+fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST",
+    body: JSON.stringify(mensaje),
+    headers: { "Content-type": "application/json; charset=UTF-8" },
+  })
+    .then((response) => response.json())
+    .then((json) => { 
+        console.log(json);
+        Swal.fire(
+            'Enviado',
+            'Gracias por tu comentario',
+            'success'
+        );
+        cleanForm();})
+
+        .catch((err) => console.log(err));
+
+        let boton = document.getElementById("enviar");
+        boton.addEventListener("click", onClick);

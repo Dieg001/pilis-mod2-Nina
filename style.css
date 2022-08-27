@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;1,100;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Press+Start+2P&display=swap');
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    background: #2d5904;
+    color: #c9d05e;
+    scroll-behavior: smooth;
+}
+a{text-decoration: none;}
+
+/*navbar*/
+#navbar a {
+color: #c9d05e;
+font-weight: bold;
+}
+#navbar img {
+float: left;
+height: 100px;
+
+}
+#navbar ul{
+    list-style: none;
+    text-transform: uppercase;
+    float: right;
+}
+#navbar ul li{
+    float: left;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    
+}
+#navbar ul li a:hover {
+background: #4b0100;
+}
+/*Home*/
+#home {
+    text-align: center;
+    display: inline;
+}
+
+#home img{
+    height: 400px;
+    padding: 15px;
+    background: #c9d05e;
+}
+
+/* Quienes Somos*/
+#nosotros article{
+    padding: 10px;
+    background-color: #c9d05e;
+    color: #2d5904;
+}
+
+#foto1{
+    text-align: center;
+    background: #c9d05e;
+}
+
+/* Sobre el Evento*/
+#evento{
+    padding: 10px;
+    text-align: center;
+}
+/*registro*/
+#registro{
+    padding: 20px;
+    
+}
+.form-registro{
+   padding: 30px;
+}
+
+form .form-group {
+    margin-bottom: 0.8rem;
+}
+form .form-control{
+    display:flex;
+    width: 45%;
+    padding: 0.375rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 25px; 
+    margin-top: 2px;
+}
+.btn{
+    display:block ;
+    font-size: 15px;
+    padding: 14px 23px;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border-radius: 25px;
+    margin-top: 12px;
+}
+
+/* Pronostico del Tiempo (Usando Grid)*/
+#tiempo{
+    margin: 10px;
+    background-color: #c9d05e;
+    color: #2d5904;
+    text-align: center;
+    padding: 20px;
+}
+
+.app-container{
+    margin-left: 20%;
+    margin-right: 20%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 0.4fr 0.2fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.app-header{
+    background-color: #FFBF34;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: #000;
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+.app-main{
+    background-color: #F28500;
+    grid-area: 2 / 1 / 3 / 2;
+    display: grid;
+    grid-template-columns: 0.3fr 0.4fr 0.3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.app-weather{
+    grid-area: 1 / 1 / 2 / 2;
+    position: relative;
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#app-icon{
+    /* Centrar Vertical y Horizontalmente */
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    margin: -25px 0 0 -25px;
+}
+
+.app-info{
+    grid-area: 1 / 2 / 2 / 3;
+    font-style: oblique;
+}
+
+.app-info ul{
+    list-style: none;
+}
+
+.app-info ul li{
+    color: #000;
+    padding: 18px;
+    justify-items: center;
+}
+
+.app-landscape{
+    grid-area: 1 / 3 / 2 / 4;
+    border-radius: 10px;
+    margin: 10px;
+    background-image: url(/img/landscape/14074819238_6c00f7f002_o.jpg);
+}
+
+.app-footer{
+    background-color: #E66A35;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    grid-area: 3 / 1 / 4 / 2;
+}
+
+.app-footer h3 a{
+    color: #000;
+}
+
+/* Contacto*/
+
+footer{
+    margin: 10px;
+    color: #000;
+    padding: 10px;
+    background-color: #c9d05e;
+    text-align: center;
+}
+
+footer a{
+    color: #000;
+}
